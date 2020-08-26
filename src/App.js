@@ -8,15 +8,29 @@ class App extends Component {
           board: Array(361).fill(null),
         }
       }
+    handleClick(index) {
+        let newBoard = this.state.board
+        newBoard[index] = "X"
+        this.setState({
+            board: newBoard
+        })
+        //console.log(index)
+    }
     render() {
-    const Box = this.state.board.map(box => <div className="box">{box}</div>)
+    const Box = this.state.board.map(
+        (box, index) =>
+            <div className="box"
+                key={index}
+                onClick={() => this.handleClick(index)}>
+                {box}
+            </div>
+    )
+
         return (
             <div className="container">
                 <h1>GO Game</h1>
                 <div className="board">
-
-                {Box}
-
+                    {Box}
                 </div>
             </div>
         );

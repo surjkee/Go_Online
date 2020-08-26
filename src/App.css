@@ -18,16 +18,16 @@
 }
 
 .box{
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     border: 1px solid black;
     display: inline-block;
-    line-height: 25px;
+    line-height: 40px;
 }
 
 .board{
     display: inline-flex;
     flex-wrap: wrap;
-    width: 525px;
+    width: 810px;
 }
 
