@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Game from './components/Game';
+import Board from './components/Board.js';
 
 function App() {
     return(
-        <Game />
+        <Board />
     );
 }
 
