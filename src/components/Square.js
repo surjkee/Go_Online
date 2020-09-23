@@ -8,7 +8,7 @@ export class Square extends React.Component{
         style={{
           overflow:'hidden',
           width:'auto',
-          height:'25px',
+          height:'auto',
           backgroundColor:'gray',
           color:'red',
           boarderColor: 'black',
@@ -21,7 +21,7 @@ export class Square extends React.Component{
                   backgroundColor: color_,
                   borderRadius: "50%",
                   borderColor: color_,
-                  height:25}} >
+                  height:'100%'}} >
         </div>
       </td>
     )
